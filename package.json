@@ -1,0 +1,35 @@
+{
+  "name": "trello-todoist-synchronizer",
+  "version": "1.0.0",
+  "description": "Server for synchronizing Trello boards with Todoist projects.",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node -r esm ./src/index.js",
+    "watch": "nodemon -r esm ./src/index.js",
+    "test": "mocha -r esm __tests__",
+    "test:watch": "mocha -r esm --watch __tests__"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "author": "Kacper Cygan <kcygan54@gmail.com> (kcygan.dev)",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "0.19.0",
+    "chai": "4.2.0",
+    "dotenv": "8.2.0",
+    "esm": "3.2.25",
+    "express": "4.17.1",
+    "mongoose": "5.7.11",
+    "node-cron": "2.0.3",
+    "uuid": "3.3.3"
+  },
+  "devDependencies": {
+    "mocha": "6.2.2",
+    "nodemon": "1.19.4",
+    "supertest": "4.0.2"
+  }
+}
