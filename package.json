@@ -18,7 +18,7 @@
   "author": "Kacper Cygan <kcygan54@gmail.com> (kcygan.dev)",
   "license": "ISC",
   "dependencies": {
-    "axios": "0.19.0",
+    "axios": "0.21.1",
     "chai": "4.2.0",
     "dotenv": "8.2.0",
     "esm": "3.2.25",
